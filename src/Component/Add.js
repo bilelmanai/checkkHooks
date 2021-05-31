@@ -24,6 +24,7 @@ const Add = ({ blocks, setBlocks }) => {
       newtitle !== "" &&
       newposterURL !== "" &&
       newrating !== 0 &&
+      newrating <= 5 &&
       newdescription !== ""
     ) {
       setBlocks([...blocks, ewfilm]);
