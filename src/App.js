@@ -7,6 +7,7 @@ import Data from "./Data";
 import Star from "./Star";
 function App() {
   const [star, setstar] = useState(0);
+  const [hoverstar, setHoverstar] = useState(0);
   const [blocks, setBlocks] = useState(Data);
   const [seach, seteach] = useState("");
   const [btsearch, setbtsearch] = useState(false);
@@ -28,7 +29,12 @@ function App() {
         />
         <button onClick={clickme}>search</button>
         <div style={{ marginLeft: "20px", float: "left" }}>
-          <Star star={star} setstar={setstar} />
+          <Star
+            star={star}
+            setstar={setstar}
+            hoverstar={hoverstar}
+            setHoverstar={setHoverstar}
+          />
         </div>
       </div>
       <ItemList

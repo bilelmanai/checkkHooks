@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faTimes } from "@fortawesome/free-solid-svg-icons";
-function Star({ star, setstar }) {
+function Star({ star, setstar, hoverstar, setHoverstar }) {
   return (
     <div className="stardiv">
       {[...Array(5)].map((x, i) => {
@@ -9,10 +9,12 @@ function Star({ star, setstar }) {
           <label>
             <input type="radio" name="star" onClick={() => setstar(i + 1)} />
             <FontAwesomeIcon
+              onMouseEnter={() => setHoverstar(i + 1)}
+              onMouseLeave={() => setHoverstar(0)}
               className="staar"
               icon={faStar}
               size="2x"
-              color={i + 1 <= star ? "yellow" : "black"}
+              color={i + 1 <= (star || hoverstar) ? "yellow" : "black"}
             />
           </label>
         );
