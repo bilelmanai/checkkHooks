@@ -1,0 +1,30 @@
+.itemlist {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  background-color: #232964;
+}
+.blue {
+  background-color: #232964;
+  box-shadow: unset;
+}
+.plus {
+  position: absolute;
+  text-align: center;
+  color: white;
+  left: 0;
+  bottom: 110px;
+  right: 0;
+  font-weight: bold;
+}
+
+.mv {
+  display: flex;
+  justify-content: space-around;
+}
+.plusimg {
+  border-radius: 6px;
+  background-color: blanchedalmond;
+  color: #373b69;
+  margin-top: 50%;
+}

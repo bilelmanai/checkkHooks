@@ -1,38 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 .App {
-  text-align: center;
+  width: 80%;
+  margin-left: 12%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.model {
+  color: white;
   display: flex;
   flex-direction: column;
+  background-color: #373b69;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.model div input,
+textarea {
+  width: 75%;
+  font-size: 23px;
+  border-radius: 5px;
+  padding-left: 0.8rem;
+  outline: none;
+}
+.model div {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0.5rem 4rem 0.5rem 1rem;
+}
+.model div:last-child textarea {
+  height: 100px;
+}
+.close {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.close :hover {
+  color: white;
+}
+.search {
+  margin: 15px 140px 20px 0;
+  text-align: right;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.search button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.search input {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stardiv a :hover {
+  color: yellow;
+}
+input[type="radio"] {
+  display: none;
+}
+.staar {
+  cursor: pointer;
+  transition: color 200ms;
+}
+.label1 {
+  position: relative;
+  top: 1.5px;
 }
