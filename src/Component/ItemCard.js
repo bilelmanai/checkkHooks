@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./ItemCard.css";
 const ItemCard = ({ block }) => {
   return (

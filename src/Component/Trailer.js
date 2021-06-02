@@ -3,6 +3,7 @@ import ReactPlayer from "react-player";
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 function Trailer({ blocks }) {
   const { traailer } = useParams();
   const f = () => blocks.filter((z) => z.id === traailer)[0];
@@ -17,6 +18,17 @@ function Trailer({ blocks }) {
           <div style={{ margin: "0 5px 0 0" }}>
             <FontAwesomeIcon icon={faStar} size="1x" color="yellow" />
           </div>
+          <button
+            style={{
+              position: "absolute",
+              right: "880px",
+              borderRadius: "5px",
+            }}
+          >
+            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+              Home
+            </Link>
+          </button>
           <div style={{ margin: 0 }}>{f().rating}</div>
         </span>
       </div>

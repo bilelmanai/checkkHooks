@@ -4,7 +4,7 @@ import { faStar, faTimes } from "@fortawesome/free-solid-svg-icons";
 function Star({ star, setstar, hoverstar, setHoverstar }) {
   return (
     <div className="stardiv">
-      {[...Array(10)].map((x, i) => {
+      {[...Array(5)].map((x, i) => {
         return (
           <label key={i}>
             <input type="radio" name="star" onClick={() => setstar(i + 1)} />

@@ -11,7 +11,9 @@ const ItemList = ({ blocks, setBlocks, btsearch, seach, star }) => {
         ? star === 0
           ? blocks.map((x) => <ItemCard block={x} key={uuidv4()} />)
           : blocks
-              .filter((x) => x.rating < star + 0.5 && x.rating > star - 0.5)
+              .filter(
+                (x) => x.rating < star * 2 + 0.6 && x.rating > star * 2 - 0.6
+              )
               .map((x) => <ItemCard block={x} key={uuidv4()} />)
         : star === 0
         ? blocks
