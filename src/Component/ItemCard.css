@@ -13,6 +13,7 @@
   color: white;
   text-decoration: none;
   transform: scale(1.05);
+  cursor: pointer;
 }
 .blue:hover {
   transform: none;
@@ -60,4 +61,17 @@
 }
 span {
   display: flex;
+}
+.jfx {
+  margin: 0;
+  width: 100%;
+  background-color: #373b69;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+  color: white;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  /* margin-left: 700px;
+  margin-top: 200px; */
 }

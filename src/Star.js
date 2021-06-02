@@ -6,7 +6,7 @@ function Star({ star, setstar, hoverstar, setHoverstar }) {
     <div className="stardiv">
       {[...Array(10)].map((x, i) => {
         return (
-          <label>
+          <label key={i}>
             <input type="radio" name="star" onClick={() => setstar(i + 1)} />
             <FontAwesomeIcon
               onMouseEnter={() => setHoverstar(i + 1)}

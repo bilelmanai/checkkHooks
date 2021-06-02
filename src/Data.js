@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 const Data = [
   {
     title: "Interstellar ",
@@ -6,6 +7,8 @@ const Data = [
     posterURL:
       "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
     rating: 8.6,
+    trailer: "https://www.youtube.com/watch?v=Lm8p5rlrSkY",
+    id: uuidv4(),
   },
   {
     title: "The Shawshank Redemption",
@@ -13,6 +16,8 @@ const Data = [
       "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
     posterURL: "https://miro.medium.com/max/2048/1*ZuyHle2wBnM1MY0xkIa9hA.jpeg",
     rating: 9.3,
+    trailer: "https://www.youtube.com/watch?v=NmzuHjWmXOc",
+    id: uuidv4(),
   },
   {
     title: "Fight Club",
@@ -20,6 +25,8 @@ const Data = [
       "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
     posterURL: "https://hduse.net/img/fight.club.jpg",
     rating: 8.8,
+    trailer: "https://www.youtube.com/watch?v=qtRKdVHc-cE",
+    id: uuidv4(),
   },
   {
     title: "The Wolf of Wall Street",
@@ -28,6 +35,8 @@ const Data = [
     posterURL:
       "https://i.pinimg.com/originals/a4/33/08/a43308878b34656dbee5c0d43190a3fa.jpg",
     rating: 8.2,
+    trailer: "https://www.youtube.com/watch?v=pabEtIERlic",
+    id: uuidv4(),
   },
   {
     title: "Demon Slayer: Mugen Train",
@@ -35,6 +44,8 @@ const Data = [
       "After his family was brutally murdered and his sister turned into a demon, Tanjiro Kamado's journey as a demon slayer began. Tanjiro and his comrades embark on a new mission aboard the Mugen Train, on track to despair.",
     posterURL: "https://wallpaperaccess.com/full/4690344.jpg",
     rating: 8.4,
+    trailer: "https://www.youtube.com/watch?v=ATJYac_dORw",
+    id: uuidv4(),
   },
   {
     title: "A Quiet Place",
@@ -43,6 +54,8 @@ const Data = [
     posterURL:
       "https://m.media-amazon.com/images/M/MV5BMjI0MDMzNTQ0M15BMl5BanBnXkFtZTgwMTM5NzM3NDM@._V1_.jpg",
     rating: 7.8,
+    trailer: "https://www.youtube.com/watch?v=WR7cc5t7tv8",
+    id: uuidv4(),
   },
   {
     title: "Avengers: Endgame",
@@ -51,6 +64,8 @@ const Data = [
     posterURL:
       "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg",
     rating: 8.4,
+    trailer: "https://www.youtube.com/watch?v=TcMBFSGVi1c&t=8s",
+    id: uuidv4(),
   },
 ];
 export default Data;

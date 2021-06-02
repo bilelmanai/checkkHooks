@@ -1,11 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { NavLink, Link } from "react-router-dom";
 import "./ItemCard.css";
 const ItemCard = ({ block }) => {
   return (
-    <a href="#1" className="contain">
+    <div className="contain">
       <div className="move-img">
-        <img src={block.posterURL} alt={block.title} />
+        <Link to={`/${block.id}`}>
+          <img src={block.posterURL} alt={block.title} />
+        </Link>
       </div>
       <div className="info-contain">
         <h4>{block.title}</h4>
@@ -20,7 +23,7 @@ const ItemCard = ({ block }) => {
         <h4>description:</h4>
         <p>{block.description}</p>
       </div>
-    </a>
+    </div>
   );
 };
 
