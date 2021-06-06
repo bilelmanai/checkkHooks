@@ -63,6 +63,7 @@ span {
   display: flex;
 }
 .jfx {
+  height: 100%;
   margin: 0;
   width: 100%;
   background-color: #373b69;

@@ -7,10 +7,11 @@ import { Link } from "react-router-dom";
 function Trailer({ blocks }) {
   const { traailer } = useParams();
   const f = () => blocks.filter((z) => z.id === traailer)[0];
+
   return (
     <div className=" jfx">
       <div className="move-img">
-        <ReactPlayer controls width="100%" height="926px" url={f().trailer} />
+        <ReactPlayer controls width="100%" height="850px" url={f().trailer} />
       </div>
       <div className="info-contain">
         <h4>{f().title}</h4>
@@ -31,6 +32,10 @@ function Trailer({ blocks }) {
           </button>
           <div style={{ margin: 0 }}>{f().rating}</div>
         </span>
+      </div>
+      <div>
+        <h4>description:</h4>
+        <p>{f().description}</p>
       </div>
     </div>
   );

@@ -5,6 +5,7 @@ import Data from "./Data";
 import Star from "./Star";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Trailer from "./Component/Trailer";
+import Test from "./Test";
 function App() {
   const [star, setstar] = useState(0);
   const [hoverstar, setHoverstar] = useState(0);

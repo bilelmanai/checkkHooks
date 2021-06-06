@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "./ItemCard.css";
 const ItemCard = ({ block }) => {
   return (
@@ -12,6 +12,7 @@ const ItemCard = ({ block }) => {
       </div>
       <div className="info-contain">
         <h4>{block.title}</h4>
+
         <span>
           <div style={{ margin: "0 5px 0 0" }}>
             <FontAwesomeIcon icon={faStar} size="1x" color="yellow" />
